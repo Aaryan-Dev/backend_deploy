@@ -20,7 +20,20 @@ const { UserModle } = require("./modles/User.modle");
 
 // Routes
 app.get("/", (req, res) => {
-  res.send("This is Api for Todo List");
+  res.send(
+    "This is Api for Todo List" +
+      "<br>" +
+      "<br>" +
+      "Sign Up ---> /signup" +
+      "<br>" +
+      "Login ---> /login" +
+      "<br>" +
+      "<br>" +
+      "Add todos ---> /addTodos?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzY4ZDE2NDU0MzhkMDdhMmRhMGM4MDIiLCJlbWFpbCI6InllcyIsImlhdCI6MTY2NzgxMzc1MH0.dX9_fLpkT0O03-R7T0kbFfaEdB2s_VhlrcUuy10tpAI" +
+      "<br>" +
+      "<br>" +
+      "Get Your todos ---> /todos?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzY4ZDE2NDU0MzhkMDdhMmRhMGM4MDIiLCJlbWFpbCI6InllcyIsImlhdCI6MTY2NzgxMzc1MH0.dX9_fLpkT0O03-R7T0kbFfaEdB2s_VhlrcUuy10tpAI"
+  );
 });
 
 // AuthenticationMiddleWare
