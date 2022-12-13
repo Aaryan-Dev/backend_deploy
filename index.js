@@ -21,7 +21,7 @@ const { UserModle } = require("./modles/User.modle");
 // Routes
 app.get("/", (req, res) => {
   res.send(
-    "This is Api for Todo List" +
+    "This is backend Api for EMI calculator List" +
       "<br>" +
       "<br>" +
       "Sign Up ---> /signup" +
